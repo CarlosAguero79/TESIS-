@@ -1,0 +1,108 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{setspace} % Paquete para ajustar el interlineado
+
+% Configuración del interlineado
+\doublespacing
+
+% Carátula
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+
+    \Huge
+    \textbf{Prediagnóstico de Parkinson mediante análisis de voz utilizando algoritmos de aprendizaje supervisado}
+
+    \vspace{1.5cm}
+
+    \Large
+    Estudio de tono, velocidad del habla y pausas en audios
+
+    \vfill
+
+    \Large
+    Autor: Agüero Velásquez, Carlos Mario \\
+    Universidad ESAN\\
+    2024
+
+    \vspace{0.8cm}
+
+
+\end{titlepage}
+
+% Descripción de la realidad problemática
+\section*{Descripción de la Realidad Problemática}
+
+La enfermedad de Parkinson es un trastorno neurodegenerativo progresivo que afecta principalmente al sistema nervioso central. Se caracteriza por la muerte gradual de las neuronas productoras de dopamina, un neurotransmisor crucial para la coordinación del movimiento. Aunque el Parkinson puede empezar a afectar a personas a partir de los 60 años, también puede presentarse en edades más tempranas, un fenómeno conocido como Parkinson juvenil, que representa entre el 5\% y el 10\% de los casos totales (Klein y Schlossmacher, 2006).
+
+Uno de los síntomas más conocidos del Parkinson es el temblor o movimiento involuntario, que puede comenzar de manera sutil y progresar hasta afectar severamente la calidad de vida del paciente. Sin embargo, el Parkinson no se limita a los temblores, ya que también puede manifestarse a través de una amplia gama de síntomas, como rigidez muscular, deterioro de la postura, pérdida de movimientos automáticos y cambios en la escritura. Estos síntomas pueden variar en intensidad y tipo, lo que complica su diagnóstico y manejo (Jankovic, 2008).
+
+Además de los síntomas motores, el Parkinson puede ocasionar una serie de problemas no motores que incluyen trastornos del sueño, alteraciones cognitivas, depresión y ansiedad. Según la Parkinson's Foundation (2021), hasta un 50\% de los pacientes experimentan síntomas no motores que pueden tener un impacto significativo en su calidad de vida y en el manejo de la enfermedad. La presencia de estos síntomas no motores a menudo precede a los síntomas motores, y pueden ser una oportunidad para la detección temprana si se identifican correctamente.
+
+El diagnóstico temprano de Parkinson es crucial para mejorar la calidad de vida de los pacientes y ralentizar la progresión de la enfermedad. La detección precoz permite a los pacientes comenzar tratamientos que pueden aliviar los síntomas y mejorar su calidad de vida. Sin embargo, la mayoría de los diagnósticos se basan en la aparición de síntomas motores evidentes como temblores y rigidez, que suelen aparecer cuando la enfermedad ya está en una etapa más avanzada. Por lo tanto, existe una necesidad urgente de métodos de diagnóstico más tempranos y precisos.
+
+Estudios recientes indican que entre el 70\% y el 90\% de los pacientes presentan alteraciones vocales antes de que los síntomas motores sean evidentes. Estas alteraciones vocales podrían ser claves en la detección temprana, lo que ha llevado al desarrollo de herramientas basadas en inteligencia artificial y machine learning que analizan patrones en los datos de voz. Un estudio realizado por Li et al. (2021) demostró que el análisis de características acústicas específicas de la voz, como la frecuencia fundamental y la variabilidad de la entonación, puede lograr una precisión del 85\% en la detección temprana de Parkinson.
+
+El Parkinson se genera por la degradación o muerte progresiva de las células nerviosas del cerebro, específicamente las neuronas productoras de dopamina, un neurotransmisor crucial para la coordinación del movimiento. Aunque se entiende que la pérdida de estas neuronas es responsable de muchos de los síntomas, aún no se conoce con certeza la causa exacta de su degradación. Entre las posibles causas se encuentran factores genéticos que predisponen a la enfermedad, desencadenantes ambientales, la acumulación de cuerpos de Lewy y la presencia de la proteína alfa-sinucleína (Miller et al., 2011).
+
+Según la Organización Mundial de la Salud (OMS, 2021), más de 10 millones de personas viven con Parkinson a nivel mundial. Se estima que para 2040 esta cifra se duplique debido al envejecimiento de la población. En América Latina, esta situación es alarmante, ya que la región está experimentando un aumento en la esperanza de vida. En muchos países latinoamericanos, el acceso a cuidados médicos especializados es limitado, lo que incrementa la carga financiera y emocional del Parkinson para las familias.
+
+Entre los mayores desafíos se encuentra el hecho de que hasta el 40\% de los pacientes son diagnosticados en fases avanzadas, reduciendo significativamente las opciones de tratamiento y la posibilidad de intervención temprana. Un diagnóstico temprano permite intervenir oportunamente y ralentizar la progresión de la enfermedad. Sin embargo, el diagnóstico se basa principalmente en la observación clínica de síntomas motores evidentes, que suelen aparecer cuando el daño neuronal ya es considerable.
+
+En términos de impacto económico, en los Estados Unidos el costo anual relacionado con el Parkinson supera los 50 mil millones de dólares, considerando gastos médicos y pérdida de productividad (Marras et al., 2020). En América Latina, los recursos médicos son limitados, lo que aumenta la carga financiera para las familias y el sistema de salud. El uso de tecnologías emergentes para la detección temprana puede no solo mejorar la calidad de vida de los pacientes, sino también reducir los costos asociados con el manejo de la enfermedad.
+
+Dado que la mayoría de los diagnósticos se basa en la aparición de síntomas motores como temblores y rigidez, estudios recientes revelan que el análisis de la voz podría representar una alternativa menos invasiva y más temprana para detectar el Parkinson. Un estudio de la Universidad de Oxford (2020) mostró que el análisis de la frecuencia y entonación de la voz logró una precisión del 80\% en la identificación de pacientes en fases tempranas. Estas tecnologías tienen el potencial de transformar la forma en que se diagnostica el Parkinson, haciendo posible una intervención temprana y personalizada.
+
+
+
+\section{Formulación del Problema}
+
+\subsection{Problema General}
+La detección tardía de la enfermedad de Parkinson limita significativamente las opciones de tratamiento y la posibilidad de ralentizar su progresión. A pesar de los avances en los diagnósticos clínicos, muchas veces los síntomas motores evidentes aparecen cuando el deterioro neuronal ya ha alcanzado una etapa avanzada. Por ello, es necesario contar con métodos de diagnóstico más tempranos y precisos, que puedan identificar el Parkinson en sus fases iniciales a través de biomarcadores alternativos como las alteraciones vocales.
+
+\subsection{Problemas Específicos}
+\begin{enumerate}
+    \item ¿Cómo pueden los cambios sutiles en el habla ser utilizados como un biomarcador confiable para la detección temprana del Parkinson?
+    \item ¿Qué modelos de aprendizaje supervisado ofrecen mejores resultados en la clasificación de pacientes con riesgo de desarrollar Parkinson basados en sus patrones vocales?
+    \item ¿Qué características del habla (tono, velocidad, pausas, entre otras) son más relevantes para un diagnóstico efectivo y precoz de la enfermedad?
+    \item ¿Cuál es la precisión de los modelos de \textit{machine learning} en comparación con los métodos tradicionales para la detección del Parkinson?
+\end{enumerate}
+
+\section{Objetivos de la Investigación}
+
+\subsection{Objetivo General}
+Desarrollar un modelo de predicción basado en el análisis de voz utilizando algoritmos de aprendizaje supervisado, que permita el prediagnóstico temprano de la enfermedad de Parkinson mediante la identificación de alteraciones vocales.
+
+\subsection{Objetivos Específicos}
+\begin{enumerate}
+    \item Analizar las variaciones en el tono, la velocidad del habla y las pausas presentes en las voces de pacientes diagnosticados con Parkinson.
+    \item Evaluar la efectividad de diferentes modelos de aprendizaje supervisado para la clasificación de los patrones vocales en pacientes con y sin Parkinson.
+    \item Identificar las características más relevantes del habla que permiten distinguir entre sujetos sanos y aquellos con riesgo de desarrollar Parkinson.
+    \item Comparar el rendimiento de los modelos de \textit{machine learning} con métodos tradicionales de diagnóstico clínico en términos de precisión y sensibilidad.
+    \item Proponer una metodología accesible y replicable para el uso de análisis de voz como herramienta de diagnóstico precoz en entornos médicos.
+\end{enumerate}
+
+\section{Matriz de Consistencia}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{Problemas}                                      & \textbf{Objetivos}                             & \textbf{Variables}                               \\ \hline
+\textbf{Problema General:} Detección tardía de la enfermedad de Parkinson debido a la falta de herramientas accesibles para un prediagnóstico basado en biomarcadores no invasivos. & \textbf{Objetivo General:} Desarrollar un modelo predictivo basado en el análisis de variaciones del habla para el prediagnóstico temprano del Parkinson. & \textbf{Variable Dependiente:} Precisión del diagnóstico de Parkinson. \newline \textbf{Variable Independiente:} Características del habla (tono, velocidad, pausas). \\ \hline
+\textbf{Problema Específico 1:} Falta de identificación precisa de los cambios sutiles en el habla de pacientes con Parkinson. & \textbf{Objetivo Específico 1:} Analizar las variaciones en el tono, velocidad del habla y pausas en los pacientes con Parkinson. & \textbf{Variable Dependiente:} Identificación de patrones vocales anormales. \newline \textbf{Variable Independiente:} Parámetros de voz (tono, velocidad, pausas). \\ \hline
+\textbf{Problema Específico 2:} Incertidumbre sobre qué modelos de \textit{machine learning} son más efectivos en la clasificación de patrones vocales asociados a Parkinson. & \textbf{Objetivo Específico 2:} Evaluar la efectividad de diferentes modelos de \textit{machine learning} para la clasificación de patrones vocales. & \textbf{Variable Dependiente:} Precisión del modelo predictivo. \newline \textbf{Variable Independiente:} Algoritmo de \textit{machine learning} utilizado (SVM, Random Forest, Redes Neuronales). \\ \hline
+\textbf{Problema Específico 3:} Comparación limitada entre los métodos tradicionales de diagnóstico y los nuevos enfoques basados en análisis de voz. & \textbf{Objetivo Específico 3:} Comparar el rendimiento de los modelos de \textit{machine learning} con métodos tradicionales de diagnóstico clínico. & \textbf{Variable Dependiente:} Precisión y sensibilidad del diagnóstico. \newline \textbf{Variable Independiente:} Método de diagnóstico utilizado (clínico vs. análisis de voz). \\ \hline
+\end{tabular}
+\caption{Matriz de Consistencia}
+\end{table}
+
+\end{document}
+
+
